@@ -1,0 +1,337 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2a2a2a;
+    padding: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Keep logo on the left */
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 50px; /* Add space between the logo and the menu */
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* Align the menu items towards the right */
+    width: auto; /* Adjust width to fit the items */
+}
+
+.navbar-menu li {
+    margin-left: 40px; /* Increase space between menu items */
+}
+
+.navbar-menu li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background: #0078d4;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 0;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+
+/* Skill Bar Percentages */
+.html { width: 90%; background-color: #e34f26; }
+.css { width: 80%; background-color: #2965f1; }
+.js { width: 75%; background-color: #f7df1e; }
+.react { width: 80%; background-color: #61dafb; }
+.java { width: 85%; background-color: #007396; }
+.springboot { width: 50%; background-color: #75be44; }
+.mysql { width: 70%; background-color: #336791; }
+.git { width: 80%; background-color: #f1502f; }
+.docker { width: 70%; background-color: #2496ed; }
+
+/* Projects Section */
+.projects {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.project-card {
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.view-project-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.view-project-btn:hover {
+    background-color: #0056b3;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Links */
+.contact-links {
+    margin-bottom: 30px;
+}
+
+.contact-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #ffd700;
+}
+
+/* Contact Form */
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #ffd700;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+}
+
+/* Copyright Section */
+.copyright {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-top-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .projects-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+}
